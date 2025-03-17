@@ -1100,7 +1100,7 @@
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='98838' id='8' param='horz' type-v2='layout-flow' w='99166' x='417' y='581'>
             <zone h='98838' id='6' type-v2='layout-basic' w='90833' x='417' y='581'>
-              <zone h='24401' id='3' name='Marital Status' w='45417' x='417' y='75018'>
+              <zone h='24401' id='3' name='Marital Status' w='22709' x='417' y='75018'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1133,6 +1133,14 @@
                 </zone-style>
               </zone>
               <zone h='24401' id='16' name='Gender' w='45416' x='45834' y='75018'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24401' id='19' name='Employment' w='22708' x='23126' y='75018'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1178,10 +1186,10 @@
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98838' id='17' param='vert' type-v2='layout-flow' w='99166' x='417' y='581'>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98838' id='20' param='vert' type-v2='layout-flow' w='99166' x='417' y='581'>
                 <zone fixed-size='280' h='43718' id='12' is-fixed='true' name='Gender Barplot' w='45416' x='417' y='581'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1236,7 +1244,16 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='24401' id='3' is-fixed='true' name='Marital Status' w='45417' x='417' y='75018'>
+                <zone fixed-size='280' h='24401' id='3' is-fixed='true' name='Marital Status' w='22709' x='417' y='75018'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24401' id='19' is-fixed='true' name='Employment' w='22708' x='23126' y='75018'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1478,6 +1495,9 @@
     </window>
     <window class='dashboard' maximized='true' name='Dashboard 1'>
       <viewpoints>
+        <viewpoint name='Employment'>
+          <zoom type='entire-view' />
+        </viewpoint>
         <viewpoint name='Employment and Gender'>
           <zoom type='entire-view' />
           <highlight>
@@ -1521,7 +1541,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='16' />
+      <active id='19' />
       <simple-id uuid='{FC2EAC60-CB86-4767-87DD-19544C783492}' />
     </window>
   </windows>
